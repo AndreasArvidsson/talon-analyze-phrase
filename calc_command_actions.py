@@ -28,8 +28,6 @@ default_descs = {
     "insert": "Insert text <text>",
     "auto_insert": "Insert text <text>",
     "print": "Log text <obj>",
-    "user.vscode": "Execute vscode command <command_id>",
-    "user.vscode_get": "Execute vscode command <command_id> with return value",
 }
 
 
