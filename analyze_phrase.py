@@ -77,7 +77,7 @@ def get_commands_impl(captures: list[Capture], phrase_text: str) -> list[Command
     commands = get_commands_from_sim(phrase_text)
     if len(captures) != len(commands):
         raise Exception(
-            f"Got in correct number of commands({len(commands)}) for the list of captures({len(captures)})"
+            f"Got incorrect number of commands({len(commands)}) for the list of captures({len(captures)})"
         )
     return commands
 
