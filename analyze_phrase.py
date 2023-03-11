@@ -54,7 +54,6 @@ def get_metadata(phrase: Phrase) -> Optional[dict]:
 def get_commands(phrase: Phrase, phrase_text: str) -> list[AnalyzedCommand]:
     captures = phrase["parsed"]
     commands = get_commands_impl(captures, phrase_text)
-    cmd = commands[0]
 
     return [
         AnalyzedCommand(
