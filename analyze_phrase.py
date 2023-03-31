@@ -59,9 +59,9 @@ def get_commands(phrase: Phrase, phrase_text: str) -> list[AnalyzedCommand]:
         AnalyzedCommand(
             " ".join(capture._unmapped),
             command.rule.rule,
-            command.target.code,
-            get_path(command.target.filename),
-            command.target.start_line,
+            command.script.code,
+            get_path(command.script.filename),
+            command.script.start_line,
             get_captures(capture),
             get_capture_mapping(capture),
         )
